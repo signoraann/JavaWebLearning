@@ -1,0 +1,5 @@
+When it is acceptable or common in Java to use one-letter variable names?
+I can use one-letter names for index, exception instances (for example e) or for math calculations.
+
+And it is initialized with whitespace, why?
+Word initialized with whitespace because the field in while loop which is compared with the condition couldn't be empty, cause the method .equals() will  cause an exeption (loop check the first meaning of the field, and if word null, there are will be an exception )
