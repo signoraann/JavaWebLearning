@@ -5,10 +5,10 @@ public class WhileLoop {
 	Scanner scanner = new Scanner(System.in);
 	String word = " ";
 		System.out.println("Input word:");
-	while(!w.equals("exit")) {
+	while(!word.equals("exit")) {
 		System.out.println("Type 'exit' to stop");
 		word = scanner.nextLine();
-		System.out.println(w);
+		System.out.println(word);
 		}
 	scanner.close();
 	}
