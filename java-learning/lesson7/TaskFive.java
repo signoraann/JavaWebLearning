@@ -10,14 +10,12 @@ public class TaskFive {
 		long product = multiply(num1, num2);
 		long sum = add(num1, num2);
 		long difference = subtract(num1, num2);
+		System.out.printf("Product: %d; Sum: %d; Difference: %d%n", product, sum, difference);
 		if (num2 != 0) { 
 		double quotient= divide(num1, num2);
-		System.out.printf("Product: %d; Sum: %d; Difference: %d; Quontient: %f%n", product, sum, difference, quotient );
+		System.out.printf("Quontient: %f%n", quotient );
 		} 
-		else {
-			System.out.printf("Product: %d; Sum: %d; Difference: %d%n", product, sum, difference);
-			System.out.println("Quotient: division by zero is impossible");
-		}
+		else { System.out.println("Quotient: division by zero is impossible");}
 		scanner.close();
 	}
 	
@@ -33,7 +31,7 @@ public class TaskFive {
 		return (long) num1-num2;
 	}
 
-	public static float divide (int num1, int num2) {
+	public static double divide (int num1, int num2) {
 		return (float) num1/num2;
 	}
 }
