@@ -12,9 +12,12 @@ public class TaskFive {
 		long difference = subtract(num1, num2);
 		if (num2 != 0) { 
 		double quotient= divide(num1, num2);
-		System.out.println("Product: " + product + "; Sum: " + sum + "; Difference: " + difference + "; Quotient: " + quotient);
+		System.out.printf("Product: %d; Sum: %d; Difference: %d; Quontient: %f%n", product, sum, difference, quotient );
 		} 
-		else {System.out.println("Product: " + product + "; Sum: " + sum + "; Difference: " + difference + "; Quotient: division by zero is impossible");}
+		else {
+			System.out.printf("Product: %d; Sum: %d; Difference: %d%n", product, sum, difference);
+			System.out.println("Quotient: division by zero is impossible");
+		}
 		scanner.close();
 	}
 	
