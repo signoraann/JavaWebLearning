@@ -22,12 +22,12 @@ public class TaskFive {
 		return (long) num1*num2;
 	}
 	
-	public static int add(int num1, int num2) {
-		return num1+ num2;
+	public static long add(int num1, int num2) {
+		return (long) num1+ num2;
 	}
 
-	public static int subtract(int num1, int num2) {
-		return num1-num2;
+	public static long subtract(int num1, int num2) {
+		return (long) num1-num2;
 	}
 
 	public static float divide (int num1, int num2) {
