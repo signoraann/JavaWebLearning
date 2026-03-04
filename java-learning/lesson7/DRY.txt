@@ -1,0 +1,1 @@
+The DRY principle in programming means don't repeat what you have already done. You need to group universal parts of code into logical parts. So that when changing logic you don't have to fix whole code but change only one place. 
