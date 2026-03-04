@@ -32,6 +32,6 @@ public class TaskFive {
 	}
 
 	public static double divide (int num1, int num2) {
-		return (float) num1/num2;
+		return (double) num1/num2;
 	}
 }
