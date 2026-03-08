@@ -10,4 +10,9 @@ public class Dog{
 	void bark()  {
 		System.out.println("Woof!");
 	}
+	
+	@Override
+  	  public String toString() {
+        		return breed + " (" + age + " years old)";
+  	  }
 }
