@@ -8,12 +8,8 @@ public class Dog {
 		this.age = age;
 	}
 	
-	void displayInfo() {
-		System.out.println(name + " " + age + " years old");
-	}
-
 	@Override
 	public String toString() {
-		return name + (age + "years old");
+		return name + " " +  age + " years old";
 	}
 }
