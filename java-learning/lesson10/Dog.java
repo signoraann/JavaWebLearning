@@ -4,9 +4,8 @@ public class Dog {
 	private String name;
 	private int age;
 	
-	public Dog () {
-		
-	} 
+	public Dog () { } 
+
 	public String getName() {
 		return name;
 	}
@@ -20,14 +19,9 @@ public class Dog {
 	}
 
 	public void setAge(int age) {
-		checkAge(age);
+ 		this.age = age;
 	}
-	
-	
-	private void checkAge(int age) {
-		if (age<0) {System.out.println("Age cannot be negative! Try again :)");}
-		else {this.age = age;}	
-	}
+		
 	@Override
 	public String toString() {
 		return name + " " + age + " years old";
