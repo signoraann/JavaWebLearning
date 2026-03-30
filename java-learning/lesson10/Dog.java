@@ -19,7 +19,7 @@ public class Dog {
 	}
 
 	public void setAge(int age) {
- 		if (age <= 0) {
+ 		if (age < 0) {
 		      throw new IllegalArgumentException("Age cannot be negative! Try again :)");
 		}	
 		this.age = age;
