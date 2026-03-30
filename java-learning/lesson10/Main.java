@@ -10,24 +10,25 @@ public class Main {
 		String inputName = scanner.nextLine();
 		myDog.setName(inputName);
 	
-		int age = inputAge(scanner, "Input your dog's age:  ");
-		myDog.setAge(age);
+		inputAge(scanner, myDog, "Input your dog's age:  ");
 		System.out.println(myDog);	
-
-		int newAge = inputAge(scanner, "Change your dog's age. Input new dog's age: ");
-		myDog.setAge(newAge);
+		
+		inputAge(scanner, myDog,  "Change your dog's age. Input new dog's age: ");
 		System.out.println(myDog);	
 		scanner.close();
 	}
 
-	private static int inputAge(Scanner scanner, String prompt) {
-		System.out.println(prompt);
-		int age = scanner.nextInt();
-		if (age < 0) {
-			System.out.println("Age cannot be negative! Try again :)");
-			scanner.close();
-			System.exit(1);
+	private static void  inputAge(Scanner scanner, Dog dog, String prompt) {
+		boolean valid = false;
+		while (!valid) {
+			System.out.println(prompt);
+			int age = scanner.nextInt();
+			try {
+			    dog.setAge(age);
+			    valid = true;
+			} catch (IllegalArgumentException e) {
+			    System.out.println(e.getMessage());
+			}
 		}
-		return age;
-	}	
+	}
 }
