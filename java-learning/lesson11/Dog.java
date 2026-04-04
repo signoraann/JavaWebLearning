@@ -4,7 +4,10 @@ public class Dog {
 	private String name;
 	private int age;
 	
-	public Dog () { } 
+	public Dog (String name, int age) {
+		this.name = name;
+		this.age = age;
+	} 
 
 	public String getName() {
 		return name;
@@ -24,7 +27,11 @@ public class Dog {
 		}	
 		this.age = age;
 	}
-		
+	
+	public void bark() {
+		System.out.println(name + " woof!");
+	}
+	
 	@Override
 	public String toString() {
 		return name + " " + age + " years old";
