@@ -11,14 +11,14 @@ public class Main {
 		Dog dog3 = new Dog("Raf", 1);
 		dogs.add(dog3);
 		System.out.println("The list of dogs:");
-		outputDogs (dogs);	
+		makeDogsBark(dogs);	
 
 		dogs.remove(dog2);
 		System.out.println("The list of dogs after removing:");
-		outputDogs(dogs);	
+		makeDogsBark(dogs);	
 	}
 
-		private static void outputDogs (ArrayList<Dog> dogs) {
+		private static void makeDogsBark (ArrayList<Dog> dogs) {
 			 for (Dog d : dogs) {
 				d.bark();
 			}
