@@ -1,9 +1,9 @@
 package lesson11;
 import java.util.ArrayList;
-
+import java.util.List;
 public class Main {
 	public static void main(String[] args) {
-		ArrayList<Dog> dogs = new ArrayList<>();
+		List<Dog> dogs = new ArrayList<>();
 		Dog dog1 = new Dog ("Bob", 3);
 		dogs.add(dog1);
 		Dog dog2 = new Dog("Rex", 2);
@@ -18,7 +18,7 @@ public class Main {
 		printBarks(dogs);	
 	}
 
-		private static void printBarks(ArrayList<Dog> dogs) {
+		private static void printBarks(List<Dog> dogs) {
 			 for (Dog d : dogs) {
 				d.bark();
 			}
