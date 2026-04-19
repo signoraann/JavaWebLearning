@@ -1,10 +1,14 @@
 package lesson13;
 
 public class Animal {
-	public String name;
+	private String name;
 
 	public Animal (String name) {
 		this.name = name;
+	}
+
+	public String getName() {
+		return name;
 	}
 
 	public void eat() {
