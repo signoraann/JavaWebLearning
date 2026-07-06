@@ -1,14 +1,23 @@
 package lesson15;
 
 public enum OrderStatus {
-	PENDING, SHIPPED, DELIVERED;
+	PENDING("Your order is being prepared"),
+	SHIPPED("Your order is on the way!"),
+	DELIVERED("Your order has arrived"),
+	PROCESSING("Your order being prepared"), 
+	OUT_FOR_DELIVERY("Your order out for delivery"), 
+	CANCELLED("Your order cancelled"),
+	RETURNED("Your order returned"), 
+	REFUNDED("Your payment refunded"),
+	CONFIRMED("Your order has been confirmed");
 
-	public static void getStatusMessage(OrderStatus status) {
-	
-	        switch (status) {
-		case PENDING -> System.out.println("Your order is being prepared");
-		case SHIPPED -> System.out.println("Your order is on the way!");
-		case DELIVERED -> System.out.println("Your order has arrived");
-	        }
+	private final String message;
+
+	OrderStatus(String message) {
+		this.message = message;
+	}
+
+	public String getStatusMessage() {
+		return message;
 	}
 }

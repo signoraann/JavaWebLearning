@@ -3,12 +3,12 @@ package lesson15;
 public class Main {
   public static void main(String[] args) {
 	OrderStatus status = OrderStatus.DELIVERED;
-	OrderStatus.getStatusMessage(status);
+	System.out.println(status.getStatusMessage());
 
 	OrderStatus status1 = OrderStatus.SHIPPED;
-	OrderStatus.getStatusMessage(status1);
+	System.out.println(status1.getStatusMessage());
 
 	OrderStatus status2 = OrderStatus.PENDING;
-	OrderStatus.getStatusMessage(status2);
+	System.out.println(status2.getStatusMessage());
   }
 }
