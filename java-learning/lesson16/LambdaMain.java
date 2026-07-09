@@ -8,8 +8,8 @@ public class LambdaMain{
 	System.out.println(numbers);
 
 	numbers.stream()
-		.map((n) -> n*2)
+		.map(n -> n*2)
 		.toList()
-		.forEach(n->System.out.println(n));
+		.forEach(System.out::println);
      }
 }
