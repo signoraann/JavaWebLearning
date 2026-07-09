@@ -21,7 +21,6 @@ public class Main {
 	         .filter((dog) -> dog.getAge() > 5)
 	         .map(dog -> new Dog(dog.getName().toUpperCase(), dog.getAge()))
 	         .sorted(Comparator.comparing(Dog :: getName))
-	         .collect(Collectors.toList())
 	         .forEach(System.out::println);
 
 	int totalAge = dogs.stream()
