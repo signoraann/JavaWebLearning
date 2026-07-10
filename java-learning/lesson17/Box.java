@@ -12,8 +12,7 @@ public class Box<T> {
 		this.content=content;
 	}
 
-	public static <T> void printArray (T[] array) {
+	public static <T extends Number> void printNumberArray (T[] array) {
 		for (T element : array) { System.out.println(element + " ");}
-		//System.out.println();
 	}	
 }
