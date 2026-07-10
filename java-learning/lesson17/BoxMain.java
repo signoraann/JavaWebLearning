@@ -8,10 +8,13 @@ public class BoxMain{
 	Box<Integer> integer = new Box<>(123);
 	System.out.println(integer.getContent());
 
-	Double[] doubleArray = {1.1, 2.2, 3.3};
+	String[] stringArray = {"A", "B", "C"};
 	Integer[] integerArray= {1, 2, 3};
 
-	Box.printNumberArray(doubleArray);
-	Box.printNumberArray(integerArray);
+	Box.printArray(stringArray);
+	Box.printArray(integerArray);
+
+	System.out.println(Box.doubleValue(5));
+	System.out.println(Box.doubleValue(4.5));
    }
 }
