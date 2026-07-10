@@ -19,8 +19,7 @@ public class Main {
 
 	dogs.stream()
 	         .filter((dog) -> dog.getAge() > 5)
-	         .map(dog -> new Dog(dog.getName().toUpperCase(), dog.getAge()))
-	         .sorted(Comparator.comparing(Dog :: getName))
+	         .sorted(Comparator.comparing(Dog::getName, String.CASE_INSENSITIVE_ORDER))
 	         .forEach(System.out::println);
 
 	int totalAge = dogs.stream()
