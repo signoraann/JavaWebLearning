@@ -10,5 +10,10 @@ public class Box<T> {
 	}
 	public void setContent(T content) {
 		this.content=content;
+	}
+
+	public static <T> void printArray (T[] array) {
+		for (T element : array) { System.out.println(element + " ");}
+		//System.out.println();
 	}	
 }
