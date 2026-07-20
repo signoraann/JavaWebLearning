@@ -1,7 +1,5 @@
-package com.signoraann.javalearning.lesson20;
-
+package com.signoraann.javalearning.lesson20;gi
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 

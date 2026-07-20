@@ -1,6 +1,4 @@
 package com.signoraann.javalearning.lesson20;
-
-
 public class Palindrome {
     public static boolean isPalindrome(String s) {
         if (s == null) {

@@ -1,5 +1,4 @@
 package com.signoraann.javalearning.lesson20;
-
 public class Calculator {
     public static long add(int num1, int num2) {
         return (long) num1 + num2;
